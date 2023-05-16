@@ -99,5 +99,11 @@ margin-bottom: 5px;
 }
 .link-res{
   text-align: center;
-  color:#0047AB;
+}
+a{
+	color: white;
+}
+a:hover{
+	color: red;
+		
 }
