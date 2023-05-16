@@ -103,6 +103,9 @@ margin-bottom: 5px;
 a{
 	color: white;
 }
+a:visited{
+  color:chartreuse;
+}
 a:hover{
 	color: red;
 		
