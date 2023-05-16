@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Encuesta cafetería UANE</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container-form">
+    <h1>Encuesta cafetería UANE</h1>
+    <form>
+      <h2>1. ¿Cómo consideras las condiciones de la cafetería?</h2>
+      <label for="condiciones-buenas">
+        <input type="radio" id="condiciones-buenas" name="condiciones" value="buenas">
+        Buenas
+      </label>
+      <label for="condiciones-deficientes">
+        <input type="radio" id="condiciones-deficientes" name="condiciones" value="deficientes">
+        Deficientes 
+      </label>
+
+      <h2>2. ¿Qué mejorarías de la cafetería?</h2>
+      <label for="mejorar-ubicacion">
+        <input type="checkbox" id="mejorar-ubicacion" name="mejoras[]" value="ubicacion">
+        Ubicación
+      </label>
+      <label for="mejorar-espacio">
+        <input type="checkbox" id="mejorar-espacio" name="mejoras[]" value="espacio">
+        Agregar espacio 
+      </label>
+      <label for="mejorar-otro">
+        <input type="checkbox" id="mejorar-otro" name="mejoras[]" value="otro">
+        Otro 
+      </label>
+
+      <h2>3. ¿Estás conforme con el estado actual de la cafetería?</h2>
+      <label for="conforme-si">
+        <input type="radio" id="conforme-si" name="conforme" value="si">
+        Si 
+      </label>
+      <label for="conforme-no">
+        <input type="radio" id="conforme-no" name="conforme" value="no">
+        No 
+      </label>
+
+      <h2>4. Si mejorara el estado de la cafetería, ¿la visitarías frecuentemente?</h2>
+      <label for="visitar-si">
+        <input type="radio" id="visitar-si" name="visitar" value="si">
+        Si 
+      </label>
+      <label for="visitar-talvez">
+        <input type="radio" id="visitar-talvez" name="visitar" value="talvez">
+        Tal vez 
+      </label>
+      <label for="visitar-no">
+        <input type="radio" id="visitar-no" name="visitar" value="no">
+        No 
+      </label>
+
+      <h2>Comentarios:</h2>
+      <textarea name="comentarios" id="comentarios" rows="4" cols="50" placeholder ="Comparte tus comentarios"></textarea>
+
+      
+    </form>
+	
+	<button type="submit">Enviar</button>
+  </div>
+  <div class="link-res">
+    <a href="resultados.html" target="blank()"><h3>Ir a resultados</h3></a>
+  </div>
+  <footer>
+    <p><strong>Simulación</strong> de encuesta realizada para el proyecto final de la materia <strong>Metodología de Proyectos</strong> por los integrantes del equipo:</p>
+    <ul>
+      <li>Carrizales Cerda Samuel Adib</li>
+      <li>Cuenca Santibañez Christian Isaac</li>
+      <li>Gutiérrez Gómez Roberto</li>
+      <li>Rodríguez Dueñez Alan</li>
+      <li>Santillán Jiménez Carlos Abraham</li>
+    </ul>
+  </footer>
+</body>
+</html>
+
+
+
+
+

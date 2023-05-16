@@ -1,0 +1,103 @@
+body {
+  background-color: #222;
+  color: #ccc;
+  font-family: monospace, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.chart-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+.chart:hover{
+  background-color: red;
+}
+.chart {
+  background-color: #0047AB;
+  padding: 20px;
+  height: 180px;
+}
+
+.chart h2 {
+  color: #fff;
+}
+
+.chart ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.chart ul li {
+  margin-bottom: 10px;
+}
+.chart ul li:hover {
+  color:white;
+  font-size: 200%;
+}
+
+footer {
+  background-color: #333;
+  padding: 20px;
+color: #fff;
+font-size: 10px;
+text-align: center;
+}
+
+footer p {
+margin-bottom: 10px;
+}
+
+footer ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+footer ul li {
+margin-bottom: 5px;
+}
+
+.comment-box {
+      display: none;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #152238;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 300px;
+      text-align: center;
+	  color: white;
+	  font-size: 30px;
+	  font-style: italic;
+    }
+ 
+.button {
+	display: inline;
+	
+	
+}
+.comment{
+	text-align: center;
+}
+.container-form{
+	text-align: center;
+}
+.link-res{
+  text-align: center;
+  color:#0047AB;
+}

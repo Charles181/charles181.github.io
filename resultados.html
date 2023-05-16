@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Resultados de encuesta - Cafetería UANE</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script>
+    function showRandomComment() {
+      var comments = [
+        "\"Deberían incrementar el espacio de la cafetería, no cabe mucha gente y por lo mismo prefiero comprar en otra parte. - Pedro\"",
+        "\"Yo opino que el lugar en donde está la cafetería no es el más adecuado, me queda muy lejos de mi salón.\" - Ana",
+        "\"A mi parecer, deberían tener más mesas disponibles, aunque la verdad, no veo cómo, el espacio es muy pequeño.\" - Jorge",
+        "\"Simplemente no me gusta el diseño, es muy incómodo.\" - Anónimo",
+        "\"Es muy bueno el servicio, solo que el espacio no es el mejor.\" - Juan",
+        "\"Puede mejorar.\" - Anónimo",
+		"\"¿Que tal si la cambian de lugar?.\" - Rosa",
+		"\"Yo opino que deberían construir una nueva!\" - Víctor",
+        "\"Es muy viejo el lugar, necesita una remodelación.\" - Dariela",
+		"\"No hay suficiente espacio para sentarse cómodamente.\" - Laura",
+		"\"El lugar está siempre abarrotado, no se puede disfrutar de la comida.\" - Carlos",
+		"\"La ubicación de la cafetería es terrible, está lejos de todas mis clases.\" - Sofía",
+		"\"No hay suficientes mesas disponibles, siempre tengo que esperar para encontrar un lugar.\" - Daniel",
+		"\"Es imposible moverse por la cafetería durante el descanso.\" - Andrea",
+		"\"El espacio es tan reducido que me siento claustrofóbico cuando estoy ahí.\" - Eduardo",
+		"\"La ubicación de la cafetería es inaccesible para la mayoría de los estudiantes.\" - María",
+		"\"No hay suficientes opciones de comida debido al espacio limitado.\" - Luis",
+		"\"La falta de espacio en la cafetería dificulta socializar con otros estudiantes.\" - Valeria",
+		"\"La ubicación de la cafetería es tan inconveniente que prefiero llevar mi propia comida.\" - Jose"
+      ];
+      
+      var randomComment = comments[Math.floor(Math.random() * comments.length)];
+      var commentBox = document.getElementById("comment-box");
+      commentBox.textContent = randomComment;
+      commentBox.style.display = "block";
+	  commentBox.style.width = "100%";
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Resultados de encuesta - Cafetería UANE</h1>
+  </header>
+  
+  <div class="chart-container">
+    <div class="chart" id="chart1">
+      <h2>Pregunta 1: ¿Cómo consideras las condiciones de la cafetería?</h2>
+      <ul>
+        <li>Buenas (30)</li>
+        <li>Deficientes (90)</li>
+      </ul>
+    </div>
+  
+    <div class="chart" id="chart2">
+      <h2>Pregunta 2: ¿Qué mejorarías de la cafetería?</h2>
+      <ul>
+        <li>Ubicación (40)</li>
+        <li>Agregar espacio (63)</li>
+        <li>Otro (17)</li>
+      </ul>
+    </div>
+  
+    <div class="chart" id="chart3">
+      <h2>Pregunta 3: ¿Estás conforme con el estado actual de la cafetería?</h2>
+      <ul>
+        <li>Sí (22)</li>
+        <li>No (98)</li>
+      </ul>
+    </div>
+  
+    <div class="chart" id="chart4">
+      <h2>Si mejorara el estado de la cafetería, ¿la visitarías frecuentemente?</h2>
+      <ul>
+        <li>Sí (116)</li>
+        <li>Tal vez (4)</li>
+        <li>No (0)</li>
+      </ul>
+    </div>
+  </div>
+  <div class="comment">
+  <button  onclick="showRandomComment()">Ver comentarios</button>
+    <div id="comment-box" class="comment-box"></div>
+  </div>
+  
+  <footer>
+    <ul>
+    <p><strong>Simulación</strong> de encuesta realizada para el proyecto final de la materia <strong>Metodología de Proyectos</strong> por los integrantes del equipo:</p>
+      <li>Carrizales Cerda Samuel Adib</li>
+      <li>Cuenca Santibañez Christian Isaac</li>
+      <li>Gutiérrez Gómez Roberto</li>
+      <li>Rodríguez Dueñez Alan</li>
+      <li>Santillán Jiménez Carlos Abraham</li>
+    </ul>
+  </footer>
+</body>
+</html>
