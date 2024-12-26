@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing page for Carlos Santillan Jimenez - Developer, Engineer, and IT Specialist">
+    <title>Welcome | CSJ Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation -->
+    <header class="bg-gray-800 text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-xl font-bold">CSJ Portfolio</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="text-white hover:text-blue-400">About Me</a></li>
+                    <li><a href="#projects" class="text-white hover:text-blue-400">Projects</a></li>
+                    <li><a href="#contact" class="text-white hover:text-blue-400">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-slate-800 to-indigo-600 text-white py-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold text-white sm:text-5xl">
+                Hi, I'm Carlos Santillan!
+            </h1>
+            <img alt="Profile picture" class="inline-block rounded-full border-4 border-green-500 md:box-content" height="200" src="static/avatar.jpg" width="200"/>
+            <p class="text-lg text-gray-300 mt-2 sm:mt-4">IT Specialist, Developer, Problem solver</p>
+            <a href="#projects" class="inline-block bg-white text-blue-500 mt-6 px-6 py-3 rounded-lg shadow-md hover:bg-gray-200 transition-colors duration-300">Explore My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-blue-50">
+        <div class="container mx-auto text-center">
+            <h3 class="text-4xl font-bold mb-6 text-gray-800">A Bit About Me</h3>
+            <p class="text-gray-700 text-lg mb-8">Father, aspiring Industrial and Systems Engineer, and self-taught developer. I specialize in Python, Flask, and Streamlit and have 10+ years of experience in IT support. Passionate about continuous improvement, D&D, and leveraging technology to solve real-world problems.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+                <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-2xl font-bold mb-2 text-gray-800">Industrial Engineer</h4>
+                    <p class="text-gray-600">Expertise in lean methodologies like 5S, Kaizen, and Kanban to drive productivity and efficiency.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-2xl font-bold mb-2 text-gray-800">Self-Taught Developer</h4>
+                    <p class="text-gray-600">Fluent in Python, HTML, CSS, JavaScript with a passion for automating and building scalable solutions.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-2xl font-bold mb-2 text-gray-800">IT Specialist</h4>
+                    <p class="text-gray-600">Over a decade of experience managing IT infrastructure and implementing effective tech solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-blue-50 py-16">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-6">My Projects</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white shadow-md rounded-lg p-4 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                    <h4 class="text-xl font-bold mb-2">TODO App</h4>
+                    <div class="border-b-4 border-gray-500 mb-2"></div>
+                    <p class="text-gray-700">Built with Flask, SQLite, and Bootstrap to manage tasks and inventory.</p>
+                    <a href="https://github.com/Charles181/python-flask-household-management-app" class="text-blue-500 hover:text-blue-600 mt-2 inline-block">View on GitHub</a>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">                    <h4 class="text-xl font-bold mb-2">PDF Auto-Filler</h4>
+                    <div class="border-b-4 border-gray-500 mb-2"></div>
+                    <p class="text-gray-700">CLI Python scripts to automate service reports and save hours of manual work.</p>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                    <h4 class="text-xl font-bold mb-2">Maintenance Reports App</h4>
+                    <div class="border-b-4 border-gray-500 mb-2"></div>
+                    <p class="text-gray-700">Streamlines corrective maintenance with a SQLite backend and data analysis via Pandas.</p>
+                    <a href="https://github.com/Charles181/python-maintenance" class="text-blue-500 hover:text-blue-600 mt-2 inline-block">View on GitHub</a>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                    <h4 class="text-xl font-bold mb-2">University Chatbot</h4>
+                    <div class="border-b-4 border-gray-500 mb-2"></div>
+                    <p class="text-gray-700">Streamlit app using Gemini API to assist students with university processes and resources.</p>
+                    <a href="https://github.com/Charles181/python-streamlit-university_chatbot" class="text-blue-500 hover:text-blue-600 mt-2 inline-block">View on GitHub</a>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                    <h4 class="text-xl font-bold mb-2">Homework Tracker</h4>
+                    <div class="border-b-4 border-gray-500 mb-2"></div>
+                    <p class="text-gray-700">Streamlit app that integrates with Moodle for a seamless task management experience.</p>
+                    <a href="https://github.com/Charles181/python-homework_tracker" class="text-blue-500 hover:text-blue-600 mt-2 inline-block">View on GitHub</a>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                    <h4 class="text-xl font-bold mb-2">IT Assets Manager</h4>
+                    <div class="border-b-4 border-gray-500 mb-2"></div>
+                    <p class="text-gray-700">Flask app for tracking company IT assets, user assignments, and maintenance records.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-blue-500 text-white py-16">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-6">Get In Touch</h3>
+            <p class="mb-6">Interested in collaborating or have a question? Reach out below!</p>
+            <form class="text-black max-w-xl mx-auto lg:w-full w-80">
+                <input type="text" placeholder="Name" class="block w-full mb-4 px-4 py-2 rounded-lg" required>
+                <input type="email" placeholder="Email" class="block w-full mb-4 px-4 py-2 rounded-lg" required>
+                <textarea placeholder="Your Message" class="block w-full mb-4 px-4 py-2 rounded-lg" rows="5" required></textarea>
+                <button type="submit" class="bg-white text-blue-500 px-6 py-3 rounded-lg shadow-md hover:bg-gray-200">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-center text-gray-400 py-6">
+        <p>Carlos Santillan Jimenez</p>
+        <div class="flex space-x-4 justify-center mt-6">
+            <a href="https://github.com/charles181/" target="_blank" class="text-gray-400 hover:text-white">
+                <i class="fab fa-github text-2xl"></i>
+            </a>
+            <a href="www.linkedin.com/in/carlos-santillan-442a0226a" target="_blank" class="text-gray-400 hover:text-white">
+                <i class="fab fa-linkedin text-2xl"></i>
+            </a>
+            <a href="mailto:csantillanj@gmail.com" class="text-gray-400 hover:text-white">
+                <i class="fas fa-envelope text-2xl"></i>
+            </a>
+        </div>
+    </footer>
+
+</body>
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+</html>
