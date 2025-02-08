@@ -1,0 +1,214 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background: #f8bbd0;
+    font-size: 20px;
+    overflow-x: hidden;
+}
+
+#mainDiv {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    position: relative;
+}
+
+#loveHeart {
+    width: 670px;
+    height: 625px;
+}
+
+#garden {
+    width: 100%;
+    height: 100%;
+}
+
+#elapseClock {
+    text-align: right;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#words {
+    font-family: "sans-serif";
+    width: 500px;
+    font-size: 24px;
+    color: #fff;
+}
+
+#messages {
+    display: none;
+    text-align: center;
+    font-size: 30px;
+}
+
+#elapseClock .digit {
+    font-family: "digit";
+    font-size: 40px;
+    text-align: center;
+}
+
+#loveu {
+    padding: 5px;
+    font-size: 22px;
+    margin-top: 50px;
+    margin-right: 120px;
+    text-align: right;
+    display: none;
+}
+
+#loveu .signature {
+    margin-top: 10px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#code {
+    width: 440px;
+    min-height: 620px;
+    color: #fff;
+    font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
+    font-size: 18px;
+    padding: 20px;
+}
+
+#code .string { color: #2a36ff; }
+#code .keyword { color: #7f0055; font-weight: bold; }
+#code .placeholder { margin-left: 15px; }
+#code .space { margin-left: 7px; }
+#code .comments { color: #e91e63; }
+
+#icon {
+    font-size: 48px;
+    color: red;
+    display: block;
+    margin: 20px auto;
+}
+
+#heartspan {
+    display: block;
+    text-align: center;
+    margin: 20px;
+}
+
+#modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  #modal.active {
+    display: flex; /* Show modal when active */
+  }
+
+@media (max-width: 1300px) {
+    #code {
+        font-size: 30px;
+    }
+}
+
+#confettis {
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  .confetti {
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    transform-origin: left top;
+    animation: confetti 5s ease-in-out -2s infinite;
+  }
+  @keyframes confetti {
+    0% {
+      transform: rotateZ(15deg) rotateY(0deg) translate(0, 0);
+    }
+    25% {
+      transform: rotateZ(5deg) rotateY(360deg) translate(-5vw, 20vh);
+    }
+    50% {
+      transform: rotateZ(15deg) rotateY(720deg) translate(5vw, 60vh);
+    }
+    75% {
+      transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw, 80vh);
+    }
+    100% {
+      transform: rotateZ(15deg) rotateY(1440deg) translate(10vw, 110vh);
+    }
+  }
+
+  .confetti:nth-child(1) {
+    left: 10%;
+    animation-delay: 0;
+    background-color: #fc0120;
+  }
+  .confetti:nth-child(2) {
+    left: 20%;
+    animation-delay: -5s;
+    background-color: #8257e6;
+  }
+  .confetti:nth-child(3) {
+    left: 30%;
+    animation-delay: -3s;
+    background-color: #ffbf4d;
+  }
+  .confetti:nth-child(4) {
+    left: 40%;
+    animation-delay: -2.5s;
+    background-color: #fe5d7a;
+  }
+  .confetti:nth-child(5) {
+    left: 50%;
+    animation-delay: -4s;
+    background-color: #45ec9c;
+  }
+  .confetti:nth-child(6) {
+    left: 60%;
+    animation-delay: -6s;
+    background-color: #f6e327;
+  }
+  .confetti:nth-child(7) {
+    left: 70%;
+    animation-delay: -1.5s;
+    background-color: #f769ce;
+  }
+  .confetti:nth-child(8) {
+    left: 80%;
+    animation-delay: -2s;
+    background-color: #007de7;
+  }
+  .confetti:nth-child(9) {
+    left: 90%;
+    animation-delay: -3.5s;
+    background-color: #63b4fc;
+  }
+  .confetti:nth-child(10) {
+    left: 100%;
+    animation-delay: -2.5s;
+    background-color: #f9c4ea;
+  }

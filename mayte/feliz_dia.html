@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Día de San Valentín</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-[#f8bbd0] flex flex-col items-center justify-center min-h-screen p-4">
+  <div class="text-center">
+    <h1 id="top-text" class="text-4xl font-bold text-pink-900 mb-4">Feliz Día de San Valentín</h1>
+    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWNsZmh3dzlpMzRlY20xOWhpZ2UxMm5kbXhqbXgxbjV1bm53NjhiciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8FbmKNAAw92tW/giphy.gif" alt="GIF de San Valentín" class="mx-auto mb-8">
+    <button id="revealButton" class="bg-pink-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-pink-700 transition duration-300">
+      Haz click aquí para saber lo que me gusta de ti
+    </button>
+    <div id="link"></div>
+  </div>
+
+  <div id="wordRain" class="fixed top-0 left-0 w-full h-full overflow-hidden pointer-events-none"></div>
+  <audio autoplay>
+    <source src="amor.mp3" type="audio/mpeg">
+  </audio>
+  <script src="js/script_end.js"></script>
+</body>
+</html>
