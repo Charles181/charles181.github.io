@@ -2,8 +2,14 @@ document.getElementById('revealButton').addEventListener('click', function() {
     const wordRain = document.getElementById('wordRain');
     const attributes = [
       "hermosa", "virtuosa", "bella", "sensible", "cariñosa", "fuerte", "amistosa", "alegre", "guapa", "interesante",
-      "inteligente", "diestra", "amable", "sincera", "bondadosa", "cálida", "preciosa", "culta", "tierna", "sencilla",
-      "sexy", "chaparrita", "make-up artist", "apasionada", "excelente besadora", "fiel", "timida", "abrazable", "muuuy sexy"
+  "inteligente", "diestra", "amable", "sincera", "bondadosa", "cálida", "preciosa", "culta", "tierna", "sencilla",
+  "sexy", "chaparrita", "make-up artist", "apasionada", "excelente besadora", "fiel", "timida", "abrazable", "muuuy sexy",
+  "comprensiva", "respetuosa", "dedicada", "creativa", "divertida", "encantadora", "generosa", "graciosa", "honesta",
+  "humilde", "inspiradora", "leal", "luchadora", "optimista", "organizada", "paciente", "persistente", "protectora",
+  "resiliente", "sabia", "sofisticada", "talentosa", "valiente", "visionaria", "única", "adorable",
+  "elegante", "empática", "entusiasta", "espontánea", "fascinante", "genuina", "iluminadora", "increíble", "magnética",
+  "maravillosa", "misteriosa", "optimista", "radiante", "seductora", "sensual", "sofisticada", "sorprendente", "especial",
+  "única", "irrepetible", "inolvidable", "incondicional", "increíblemente amorosa", "la mejor mamá del mundo", "mi media naranja"
     ];
     const txt = document.getElementById('top-text');
     const link = document.getElementById('link')
