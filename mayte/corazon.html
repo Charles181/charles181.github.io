@@ -17,6 +17,23 @@
 <script type="text/javascript" src="js/garden.js"></script>
 <script type="text/javascript" src="js/functions.js"></script>
 <script type="module" src="js/confetti.js"></script>
+<script>
+	// Function to detect iOS devices
+	function isIOS() {
+		return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+	}
+
+	// Function to modify the audio tag
+	function modifyAudioTag() {
+		var audioTag = document.getElementById('myAudio');
+		if (isIOS()) {
+			audioTag.setAttribute('controls', 'controls');
+		}
+	}
+
+	// Run the function when the page loads
+	window.onload = modifyAudioTag;
+</script>
 
 </head>
 
